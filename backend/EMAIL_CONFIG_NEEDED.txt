@@ -1,0 +1,47 @@
+📧 EMAIL CONFIGURATION REQUIRED
+================================
+
+Your contact form is ready, but email sending is NOT configured yet.
+
+QUICK SETUP (5 minutes):
+-------------------------
+
+1. Go to: https://myaccount.google.com/apppasswords
+   (You'll need to enable 2-Step Verification first if not already enabled)
+
+2. Generate an App Password:
+   - Select "Mail" 
+   - Select "Other (Custom name)"
+   - Enter: "Shinde Foods"
+   - Click GENERATE
+   - COPY the 16-character password (like: abcd efgh ijkl mnop)
+
+3. Open this file: backend/.env
+   
+4. Replace this line:
+   EMAIL_PASSWORD=REPLACE_WITH_16_CHAR_APP_PASSWORD
+   
+   With (remove spaces from the password):
+   EMAIL_PASSWORD=abcdefghijklmnop
+
+5. Restart your backend server:
+   - Press Ctrl+C in the terminal running the backend
+   - Run: npm run dev
+
+6. Test the contact form!
+
+WHY DO I NEED THIS?
+-------------------
+Gmail requires "App Passwords" for applications to send emails.
+Your regular Gmail password won't work for security reasons.
+
+TROUBLESHOOTING:
+----------------
+- Error "Invalid login" → You need the App Password, not regular password
+- Can't find App Passwords page → Enable 2-Step Verification first
+- Still not working → Check EMAIL_SETUP_GUIDE.md for detailed help
+
+NEED HELP?
+----------
+Read: EMAIL_SETUP_GUIDE.md (in root folder)
+Or run: setup-email.bat (Windows helper script)

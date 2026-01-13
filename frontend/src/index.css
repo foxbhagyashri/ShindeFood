@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --primary-burgundy: #8B1B1F;
+  --primary-maroon: #A52A2A;
+  --secondary-burgundy: #6B1519;
+  --light-burgundy: #B83B3F;
+  --burgundy-50: #FDF2F2;
+  --burgundy-100: #FBE5E5;
+  --burgundy-200: #F5CCCC;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
